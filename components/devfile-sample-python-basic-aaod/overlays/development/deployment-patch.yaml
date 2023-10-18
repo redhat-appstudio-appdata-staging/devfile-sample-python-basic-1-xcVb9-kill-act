@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-aaod
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/yangcao-tenant/devfile-sample-python-basic-1/devfile-sample-python-basic-aaod@sha256:675fc23522ddf9471367e96933fff8e2ec0d54125743a4b971113a101d82c0c3
+        name: my-python
+        resources: {}
+status: {}
